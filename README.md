@@ -82,6 +82,7 @@ deep-minds/
 │   ├── midterm_results/             # original 50-feature experiments (LR, RF, Keras MLP)
 │   ├── week1/ … week4/      # final project notebooks, named by person (A/B/C)
 ├── diagrams/                # architecture diagrams (PDF + PNG)
+├── reports/                 # project proposal and midterm
 └── results/                 # results_log.csv, final_test_results.csv, figures/
 ```
 
