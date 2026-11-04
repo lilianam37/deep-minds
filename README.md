@@ -79,7 +79,7 @@ deep-minds/
 │   ├── project_utils.py     # features list, data loading, URL encoding, evaluate_model, log_result
 │   └── torch_models.py      # MLP, CharCNN, training loop with early stopping
 ├── notebooks/
-│   ├── midterm/             # original 50-feature experiments (LR, RF, Keras MLP)
+│   ├── midterm_results/             # original 50-feature experiments (LR, RF, Keras MLP)
 │   ├── week1/ … week4/      # final project notebooks, named by person (A/B/C)
 ├── diagrams/                # architecture diagrams (PDF + PNG)
 └── results/                 # results_log.csv, final_test_results.csv, figures/
