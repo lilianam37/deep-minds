@@ -56,7 +56,7 @@ Architecture diagrams for all four models are in [`diagrams/`](diagrams/).
 - **No leakage:**
   - The feature scaler and the CNN's character vocabulary are fit on the training rows only.
   - All tuning uses the validation split.
-  - The test split is used **once**, by `week3/A4_final_test`.
+  - The test split is used **once**, by `week3/10_whitney_final_test`.
 - **Logging:** every run appends one row to `results_log.csv` with the model, the split,
   every hyperparameter and every metric (accuracy, precision, recall, F1, ROC-AUC, PR-AUC,
   false positives, false negatives).
@@ -80,7 +80,7 @@ deep-minds/
 │   └── torch_models.py      # MLP, CharCNN, training loop with early stopping
 ├── notebooks/
 │   ├── midterm_results/             # original 50-feature experiments (LR, RF, Keras MLP)
-│   ├── week1/ … week4/      # final project notebooks, named by person (A/B/C)
+│   ├── week1/ … week4/      # final project notebooks, named step_owner_task
 ├── diagrams/                # architecture diagrams (PDF + PNG)
 ├── reports/                 # project proposal and midterm
 └── results/                 # results_log.csv, final_test_results.csv, figures/
@@ -101,26 +101,26 @@ Run the notebooks in this order. Each one reads the files the earlier ones saved
 
 | Step | Notebook | Output |
 |---|---|---|
-| 1 | `week1/A1_url_split` | `master_with_splits.csv` (URLs, labels, random + domain splits) |
-| 2 | `week1/A2_logistic_regression_url` | LR baseline + weight plot |
-| 3 | `week1/B1_random_forest_url` | RF + feature importance |
-| 4 | `week1/B2_mlp_url_pytorch` | MLP + learning curve |
-| 5 | `week1/C1_sweeps_lr_rf_mlp` | LR / RF / MLP sweeps (+ no-URLSimilarityIndex ablation) |
-| 6 | `week2/C2_char_cnn` | Char-CNN, learning curve, saved model `char_cnn_default.pt` |
-| 7 | `week2/A3_cnn_sweep` | CNN sweep |
-| 8 | `week2/B3_sweep_plots` | Sweep figures |
-| 9 | `week3/B4_ablations` | Prefix-strip, no-conv, domain-split ablations |
-| 10 | `week3/A4_final_test` | **Test-set results** for the four final models |
-| 11 | `week3/C3_error_analysis_tsne` | Misclassified URLs + t-SNE plot |
-| 12 | `week4/B5_final_figures` | Report figures and LaTeX tables |
-| 13 | `week4/C4_gradio_demo` | Paste-a-URL demo |
+| 1 | `week1/01_whitney_url_split` | `master_with_splits.csv` (URLs, labels, random + domain splits) |
+| 2 | `week1/02_whitney_logistic_regression_url` | LR baseline + weight plot |
+| 3 | `week1/03_liliana_random_forest_url` | RF + feature importance |
+| 4 | `week1/04_liliana_mlp_url_pytorch` | MLP + learning curve |
+| 5 | `week1/05_leiton_sweeps_lr_rf_mlp` | LR / RF / MLP sweeps (+ no-URLSimilarityIndex ablation) |
+| 6 | `week2/06_leiton_char_cnn` | Char-CNN, learning curve, saved model `char_cnn_default.pt` |
+| 7 | `week2/07_whitney_cnn_sweep` | CNN sweep |
+| 8 | `week2/08_liliana_sweep_plots` | Sweep figures |
+| 9 | `week3/09_liliana_ablations` | Prefix-strip, no-conv, domain-split ablations |
+| 10 | `week3/10_whitney_final_test` | **Test-set results** for the four final models |
+| 11 | `week3/11_leiton_error_analysis_tsne` | Misclassified URLs + t-SNE plot |
+| 12 | `week4/12_liliana_final_figures` | Report figures and LaTeX tables |
+| 13 | `week4/13_leiton_gradio_demo` | Paste-a-URL demo |
 
 The midterm notebooks in `notebooks/midterm/` reproduce the earlier 50-feature results and
 are not needed for the final results.
 
 ## Results
 
-*To be filled in after `week3/A4_final_test` is run.*
+*To be filled in after `week3/10_whitney_final_test` is run.*
 
 | Model (test split) | Accuracy | Precision | Recall | F1 | Missed phishing | False alarms |
 |---|---|---|---|---|---|---|
